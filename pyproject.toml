@@ -1,0 +1,21 @@
+[project]
+name = "pyrawsql"
+version = "0.1.0"
+description = "Super small sql query helper for sqlalchemy"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlalchemy>=2",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+    "pre-commit>=4.5.1",
+    "pytest>=9.0.0",
+    "ruff>=0.14.10",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.21,<0.10.0"]
+build-backend = "uv_build"
